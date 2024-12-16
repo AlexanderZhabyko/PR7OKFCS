@@ -1,3 +1,4 @@
+import datetime
 import json
 import logging
 
@@ -12,8 +13,8 @@ from django.shortcuts import get_object_or_404
 from django.shortcuts import render, redirect
 
 from .decorators import role_required
-from .form import *
-from .models import *
+from .form import RegisterForm, OrderForm, UserForm, UserOrderForm, UpdateUserForm, SupplyOrderForm, DeliveryTimeForm
+from .models import Order, OrderStatus, ProductOrder, Product, Provider, User, Role, Stock, Log, DeliveryTime
 
 
 # Create your views here.
@@ -504,7 +505,8 @@ def delivery_orders(request):
 def mark_as_delivered(request, order_id):
     order = Order.objects.get(id=order_id)
     if order.status.status == "Доставка":
-        delivered_status, created = OrderStatus.objects.get_or_create(status="Выдан")
+        delivered_status, created = (OrderStatus.objects
+                                     .get_or_create(status="Выдан"))
         order.status = delivered_status
         order.delivery_date = datetime.datetime.now()
         order.save()
