@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Товары В заказе
+{% endblock %}
+{% block body %}
+    <a class="secondary-btn" href="{% url 'add_productorders' %}">добавить</a>
+
+    <ul>
+  {% for product_order in page_obj %}
+      <div class="ulclass">
+            <li class="liclass" >Заказ #{{ product_order.order.id }} | Товар: {{ product_order.product.title }} | Количество: {{ product_order.quantity }} Шт.</li>
+            <a class="service-btn" href="{% url 'edit_productorders' product_order.pk %}">Изменить</a>
+            <a href="{% url 'delete_productorders' product_order.pk %}" class="delbtn" onclick="return confirm('Вы уверены что хотите удалить объект' +
+             ' {{ product_order.product.title }}');">Удалить</a>
+      </div>
+    {% endfor %}
+    </ul>
+    {% include 'inc/_paginator.html' %}
+{% endblock %}

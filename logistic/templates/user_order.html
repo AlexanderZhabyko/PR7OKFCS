@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Создать заказ
+{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block body %}
+    <h2>Создать заказ</h2>
+<form class="myform" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="secondary-btn" type="submit">Заказать</button>
+</form>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Home
+{% endblock %}
+{% block header %}
+    <a class="logo" style="background-color: transparent" href="{% url 'home' %}"><img class="logo" src="{% static 'img/logoBG.png' %}" alt="Логотип"></a>
+    <h2 class="center">AnyLogistics</h2>
+{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block body %}
+    <div class="column2">
+        <div class="center">
+            <div class="backgroundplate">
+                {% if user.is_authenticated %}
+                    <p>Здравствуйте, {{ user.login }}!</p>
+                    <p>Ваша роль - {{ user.role.role }}</p>
+                    <a class="service-btn" href="{% url 'logout' %}">Выйти</a>
+                {% else %}
+                    <p>Вы не авторизованы. <a href="{% url 'login' %}">Войти</a></p>
+                {% endif %}
+                <a class="service-btn" href="javascript:history.back()">Назад</a>
+            </div>
+        </div>
+        <div>
+            <h3>Изменение данных</h3>
+                <form class="myform smalltext, " method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="service-btn">Обновить</button>
+                </form>
+        </div>
+    </div>
+<h3>Мои заказы</h3>
+
+    <a class="secondary-btn" href="{% url 'user_create_order' %}">Сделать заказ</a>
+  <div class="center">
+    <table>
+    <thead>
+      <tr>
+        <th scope="col">Номер заказа</th>
+        <th scope="col" >Дата создания</th>
+          <th scope="col" >Дата доставки</th>
+        <th scope="col">Статус</th>
+        <th scope="col">Адрес доставки</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for order in orders %}
+        <tr>
+          <td data-label="Номер заказа">{{ order.id }}</td>
+          <td data-label="Дата создания">{{ order.departure_date }}</td>
+            <td data-label="Дата доставки">{{ order.delivery_date }}</td>
+          <td data-label="Статус">{{ order.status.status }}</td>
+          <td data-label="Адрес доставки">{{ order.address }}</td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="4">У вас нет заказов.</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Home
+{% endblock %}
+{% block header %}
+    <a class="logo" style="background-color: transparent" href="{% url 'home' %}"><img class="logo" src="{% static 'img/logoBG.png' %}" alt="Логотип"></a>
+    <h2 class="center">AnyLogistics</h2>
+{% endblock %}
+{% block nav %}
+{% endblock %}
+{% block body %}
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+            <div class="message {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+{% if user.is_authenticated %}
+    <div class="backgroundplate">
+        <p class="center bold">Здравствуйте, {{ user.login }}!</p>
+        <a class="service-btn" href="{% url 'logout' %}">Выйти</a>
+        <a class="service-btn" href="{% url 'account_view' %}">Перейти в профиль</a>
+    </div>
+{% else %}
+    <p>Вы не авторизованы. <a href="{% url 'login' %}">Войти</a></p>
+{% endif %}
+    <div class="item">
+    <a class="glow-button"  href="{% url 'logs_list' %}">Логи</a>
+    <a class="glow-button" href="{% url 'delivery_times_list' %}">Время доставки</a>
+    <a class="glow-button" href="{% url 'orders_list' %}">Заказы</a>
+    <a class="glow-button" href="{% url 'productorders_list' %}">Товары в заказе</a>
+    <a class="glow-button" href="{% url 'products_list' %}">товары</a>
+    <a class="glow-button" href="{% url 'providers_list' %}">поставщики</a>
+    <a class="glow-button" href="{% url 'roles_list' %}">роли</a>
+    <a class="glow-button" href="{% url 'stocks_list' %}">склад</a>
+    <a class="glow-button" href="{% url 'users_list' %}">пользователи</a>
+    <a class="glow-button" href="{% url 'delivery_orders' %}">Доставки</a>
+    <a class="glow-button" href="{% url 'order_statuss_list' %}">статусы заказа</a><br>
+    </div>
+{% endblock %}

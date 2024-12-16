@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Orders
+{% endblock %}
+{% block body %}
+    <a class="secondary-btn" href="{% url 'add_orders' %}">добавить заказ</a>
+
+    <form class="searchform" method="get" action="{% url 'orders_list' %}">
+    <input
+        type="text"
+        name="search"
+        value="{{ search_query }}"
+        placeholder="Введите имя заказчика"
+        class="user-box" />
+    <button type="submit" class="service-btn">Найти</button>
+</form>
+    <ul class="column2">
+
+              {% for order in page_obj %}
+                  <div class="ulclass center">
+                    <li class="liclass bold" >Заказ #{{ order.id }}</li>
+                    <li class="liclass">Заказ от {{ order.user.login }}</li>
+                    <li class="liclass">Цена {{ order.cost|floatformat:2 }}руб.</li>
+                    <li class="liclass">Статус - {{ order.status }}</li>
+                    <li class="liclass">Трек-номер: {{ order.tracking_number }}</li>
+                    <li class="liclass">Поставка: {{ order.is_supply }}</li>
+
+
+                    <li>Товары в заказе:
+                         <ul>
+                             {% for product_order in order.productorder_set.all %}
+                                 <li class="liclass">{{ product_order.product.title }} - Количество: {{ product_order.quantity }}</li>
+                             {% endfor %}
+                         </ul>
+                    </li>
+                    <a class="service-btn" href="{% url 'edit_orders' order.pk %}">Изменить</a>
+                    <a href="{% url 'delete_order' order.pk %}" class="service-btn delbtn" onclick="return confirm('Вы уверены что хотите удалить объект' +
+                     ' {{ order.tracking_number }}');">Удалить</a>
+                  </div>
+                {% endfor %}
+    </ul>
+    {% include 'inc/_paginator.html' %}
+{% endblock %}

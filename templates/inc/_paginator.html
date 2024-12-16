@@ -1,0 +1,19 @@
+<div class="pagination">
+    {% if page_obj.has_previous %}
+        <a class="first" href="?page=1{% if search_query %}&search={{ search_query }}{% endif %}">Первая</a>
+        <a class="previous" href="?page={{ page_obj.previous_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}">Предыдущая</a>
+    {% endif %}
+
+    {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+            <span class="current">{{ num }}</span>
+        {% else %}
+            <a class="page-link" href="?page={{ num }}{% if search_query %}&search={{ search_query }}{% endif %}">{{ num }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+        <a class="next" href="?page={{ page_obj.next_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}">Следующая</a>
+        <a class="last" href="?page={{ page_obj.paginator.num_pages }}{% if search_query %}&search={{ search_query }}{% endif %}">Последняя</a>
+    {% endif %}
+</div>

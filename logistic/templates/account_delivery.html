@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Страница Доставщика
+{% endblock %}
+{% block body %}
+<table>
+    <thead>
+        <tr>
+            <th>Номер заказа</th>
+            <th>Пользователь</th>
+            <th>Адрес</th>
+            <th>Дата отправления</th>
+            <th>Дата доставки</th>
+            <th>Статус</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %}
+        <tr>
+            <td>{{ order.id }}</td>
+            <td>{{ order.user }}</td>
+            <td>{{ order.address }}</td>
+            <td>{{ order.departure_date }}</td>
+            <td>{{ order.delivery_date }}</td>
+            <td>{{ order.status.status }}</td>
+            <td>
+                {% if order.status.status == 'Доставка' %}
+                    <a class="service-btn" href="{% url 'mark_as_delivered' order.id %}">Пометить как доставлено</a>
+                {% else %}
+                    Уже доставлено
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

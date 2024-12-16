@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Add Supply
+{% endblock %}
+{% block body %}
+    <h1 class="center" >Создание поставки</h1>
+<form class="myform" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="secondary-btn" type="submit">Создать поставку</button>
+</form>
+{% endblock %}

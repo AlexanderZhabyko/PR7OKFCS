@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Поставщики
+{% endblock %}
+{% block body %}
+    <a class="secondary-btn" href="{% url 'add_providers' %}">добавить</a>
+    <a class="secondary-btn" href="{% url 'create_supply' %}">создать поставку</a>
+    <ul>
+  {% for provider in page_obj %}
+      <div class="ulclass">
+            <li class="liclass">Имя поставщика: {{ provider.user.login }} | тип продукции: {{ provider.product_type }} | Рейнтинг поставщика: {{ provider.rating }}</li>
+            <a class="service-btn" href="{% url 'edit_providers' provider.pk %}">Изменить</a>
+            <a href="{% url 'delete_provider' provider.pk %}" class="service-btn delbtn" onclick="return confirm('Вы уверены что хотите удалить объект' +
+             ' {{ provider.user.login }}');">Удалить</a>
+      </div>
+    {% endfor %}
+    </ul>
+    {% include 'inc/_paginator.html' %}
+{% endblock %}

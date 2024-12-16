@@ -1,0 +1,1921 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-10-11T07:31:05.045Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "user",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-10-11T07:31:08.470Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-10-11T07:31:21.532Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "stockman",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-10-11T07:31:36.658Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "manager",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-10-11T07:32:42.238Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-10-11T07:32:52.605Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-10-16T14:07:35.152Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "test",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-10-16T14:07:58.214Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "testtest",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Login\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-10-16T14:34:23.479Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "testtest2 - Created",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-10-20T12:29:15.225Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Delivery of ручка by testtest2 at 2024-10-20 12:29:11+00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-10-20T12:31:50.516Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Delivery of ручка by testtest2 at 2024-10-20",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Delivery time\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add role",
+        "content_type": 7,
+        "codename": "add_role"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change role",
+        "content_type": 7,
+        "codename": "change_role"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete role",
+        "content_type": 7,
+        "codename": "delete_role"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view role",
+        "content_type": 7,
+        "codename": "view_role"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add provider",
+        "content_type": 8,
+        "codename": "add_provider"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change provider",
+        "content_type": 8,
+        "codename": "change_provider"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete provider",
+        "content_type": 8,
+        "codename": "delete_provider"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view provider",
+        "content_type": 8,
+        "codename": "view_provider"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 9,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 9,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 9,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 9,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add delivery time",
+        "content_type": 10,
+        "codename": "add_deliverytime"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change delivery time",
+        "content_type": 10,
+        "codename": "change_deliverytime"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete delivery time",
+        "content_type": 10,
+        "codename": "delete_deliverytime"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view delivery time",
+        "content_type": 10,
+        "codename": "view_deliverytime"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add log",
+        "content_type": 11,
+        "codename": "add_log"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change log",
+        "content_type": 11,
+        "codename": "change_log"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete log",
+        "content_type": 11,
+        "codename": "delete_log"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view log",
+        "content_type": 11,
+        "codename": "view_log"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add product order",
+        "content_type": 12,
+        "codename": "add_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change product order",
+        "content_type": 12,
+        "codename": "change_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete product order",
+        "content_type": 12,
+        "codename": "delete_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view product order",
+        "content_type": 12,
+        "codename": "view_productorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 13,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 13,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 13,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 13,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add product",
+        "content_type": 14,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change product",
+        "content_type": 14,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": 14,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view product",
+        "content_type": 14,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add stock",
+        "content_type": 15,
+        "codename": "add_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change stock",
+        "content_type": 15,
+        "codename": "change_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete stock",
+        "content_type": 15,
+        "codename": "delete_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view stock",
+        "content_type": 15,
+        "codename": "view_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add order status",
+        "content_type": 16,
+        "codename": "add_orderstatus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change order status",
+        "content_type": 16,
+        "codename": "change_orderstatus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete order status",
+        "content_type": 16,
+        "codename": "delete_orderstatus"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view order status",
+        "content_type": 16,
+        "codename": "view_orderstatus"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$H0WRNeDD7790ZGu8hbYCPS$CtmZZzCq7W40w58q2CEMSEU0wT0+fdxzvqrrI+jTHT4=",
+        "last_login": "2024-10-11T07:30:36.882Z",
+        "is_superuser": true,
+        "username": "gold",
+        "first_name": "",
+        "last_name": "",
+        "email": "isip_a.a.zhabyko@mpt.ru",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-10-11T07:30:22.114Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$mSx2VHr7qEUamOE5Y5WR20$HhHNrZul7cFax9VilEJgmtlQO1QIL3Jm/uNSuYDNEC4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-10-11T07:32:42Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "logistic",
+        "model": "role"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "logistic",
+        "model": "provider"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "logistic",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "logistic",
+        "model": "deliverytime"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "logistic",
+        "model": "log"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "logistic",
+        "model": "productorder"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "logistic",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "logistic",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "logistic",
+        "model": "stock"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "logistic",
+        "model": "orderstatus"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9i7gz45cqem57orlkaods32xcwivfyxr",
+    "fields": {
+        "session_data": "e30:1t6ZsG:fsh6yQ-X6xzRBT9gfP40cK-WQ35AM8gyzkzogIw6VO8",
+        "expire_date": "2024-11-14T18:26:24.721Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gml1d2l8smmnh3qsyeais8l24e24vzt4",
+    "fields": {
+        "session_data": ".eJyrVopPLC3JiC8tTi2Kz0xRslIyNFHSQRZMSkzOTs0DyaRkJeal5-sl5-eVFGUm6YGU6EFli_V881NSc5ygalEMyEgszgDqVqoFADGNJoE:1t7YY1:IjZfnIRr--DjaUUzWI1tkiIMLdz-cnN5QD7WSGekdo8",
+        "expire_date": "2024-11-17T11:13:33.490Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kdgzrpcezwp0dck6cp2hr166bpnep5qn",
+    "fields": {
+        "session_data": "e30:1t6ZuP:GowFpgS3F0hKB1Z8F6Kvq20Tx-WG3N9dnbTBdffOnq4",
+        "expire_date": "2024-11-14T18:28:37.039Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "s8xoqqcxwpoea8eknz4tpsihrvtsncj5",
+    "fields": {
+        "session_data": "e30:1t6Zrz:tC0dshWlb955uPxUMWeHt-v41khOY3-jb0ldOInzM5s",
+        "expire_date": "2024-11-14T18:26:07.446Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "uiq3kfergvo5ltnj5pzhy2bdhbyg27pd",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pAOLcPg0r1nIAMMUjVtUtqV8e7apAvd_vfef6nA21rD1mQJY1ZnBer0u0VOD5l2kO883Wad5mldxqh3RR-06euc5Xk53L-Dyq1-ay82lzIYg4PBPnkbY-q969j1A3SAKFIQbCT2DsFxolzIk1gmQqBOvT_RQDcz:1szA6e:9GD2GjNWFvuseHlCk-S0LQManYXerGBCii92q2-22m8",
+        "expire_date": "2024-10-25T07:30:36.895Z"
+    }
+},
+{
+    "model": "logistic.role",
+    "pk": 1,
+    "fields": {
+        "role": "user",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.role",
+    "pk": 2,
+    "fields": {
+        "role": "admin",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.role",
+    "pk": 3,
+    "fields": {
+        "role": "stockman",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.role",
+    "pk": 4,
+    "fields": {
+        "role": "manager",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 1,
+    "fields": {
+        "login": "testtest",
+        "password": "testtest",
+        "role": 1,
+        "phone": "+7 (977) 329-35",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 2,
+    "fields": {
+        "login": "testtest2",
+        "password": "testtest",
+        "role": 3,
+        "phone": "77777777777",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 3,
+    "fields": {
+        "login": "testtest2",
+        "password": "testtest",
+        "role": 3,
+        "phone": "77777777777",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 4,
+    "fields": {
+        "login": "dxftdxftj",
+        "password": "drtjdtjd",
+        "role": 1,
+        "phone": "54e734",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 5,
+    "fields": {
+        "login": "dftdftjk",
+        "password": "ftjdftj",
+        "role": 3,
+        "phone": "3463737",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 6,
+    "fields": {
+        "login": "ftykfgky",
+        "password": "fgykfgyk",
+        "role": 3,
+        "phone": "545347",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 7,
+    "fields": {
+        "login": "4324626",
+        "password": "32462626",
+        "role": 4,
+        "phone": "24362626",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 8,
+    "fields": {
+        "login": "236262",
+        "password": "2626226",
+        "role": 1,
+        "phone": "2363626",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 9,
+    "fields": {
+        "login": "568568",
+        "password": "6585688",
+        "role": 1,
+        "phone": "5685688",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 10,
+    "fields": {
+        "login": "56865858",
+        "password": "56856858",
+        "role": 1,
+        "phone": "56856858",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 11,
+    "fields": {
+        "login": "5685685",
+        "password": "7809780",
+        "role": 1,
+        "phone": "23224242",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 12,
+    "fields": {
+        "login": "3463636",
+        "password": "96709670",
+        "role": 1,
+        "phone": "dtfjdftjd",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 13,
+    "fields": {
+        "login": "gold",
+        "password": "pbkdf2_sha256$870000$nVdn6RA6EE67azGnboBUAb$tFIW11a3zctOzr2sARzweN7ZtwGRq7YUxrVcvfo4O+0=",
+        "role": 2,
+        "phone": "89773293579",
+        "is_deleted": false,
+        "last_login": "2024-10-31T19:46:53.793Z"
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 14,
+    "fields": {
+        "login": "test",
+        "password": "pbkdf2_sha256$870000$7Eon6ThnRmsSgdr9SD1xwD$Ph/QbGml3vge32SlHOLhEtsj3H4o0o9UtqHjmXeyi80=",
+        "role": 1,
+        "phone": "1224141",
+        "is_deleted": false,
+        "last_login": "2024-11-03T11:13:33.465Z"
+    }
+},
+{
+    "model": "logistic.user",
+    "pk": 15,
+    "fields": {
+        "login": "te",
+        "password": "pbkdf2_sha256$870000$O1Szrg22FjGuyMHp9egMam$vJnk30Eg7JIy87OaWpnOzw3EeLlqC7SMBSwurgoGa04=",
+        "role": 1,
+        "phone": "89773293579",
+        "is_deleted": false,
+        "last_login": null
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "action": "Created",
+        "description": "Created user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "action": "Updated",
+        "description": "Updated user testtest",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 4,
+    "fields": {
+        "user": 3,
+        "action": "Created",
+        "description": "Created user testtest2",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "action": "Updated",
+        "description": "Updated user testtest",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "action": "Updated",
+        "description": "Updated user testtest",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 7,
+    "fields": {
+        "user": 4,
+        "action": "Created",
+        "description": "Created user dxftdxftj",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 8,
+    "fields": {
+        "user": 5,
+        "action": "Created",
+        "description": "Created user dftdftjk",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 9,
+    "fields": {
+        "user": 6,
+        "action": "Created",
+        "description": "Created user ftykfgky",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 10,
+    "fields": {
+        "user": 7,
+        "action": "Created",
+        "description": "Created user 4324626",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 11,
+    "fields": {
+        "user": 8,
+        "action": "Created",
+        "description": "Created user 236262",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 12,
+    "fields": {
+        "user": 9,
+        "action": "Created",
+        "description": "Created user 568568",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 13,
+    "fields": {
+        "user": 10,
+        "action": "Created",
+        "description": "Created user 56865858",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 14,
+    "fields": {
+        "user": 11,
+        "action": "Created",
+        "description": "Created user 5685685",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 15,
+    "fields": {
+        "user": 12,
+        "action": "Created",
+        "description": "Created user 3463636",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 16,
+    "fields": {
+        "user": 13,
+        "action": "Created",
+        "description": "Created user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 17,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 18,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 19,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 20,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 21,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 22,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 23,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 24,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 25,
+    "fields": {
+        "user": 13,
+        "action": "Updated",
+        "description": "Updated user gold",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 26,
+    "fields": {
+        "user": 14,
+        "action": "Created",
+        "description": "Created user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 27,
+    "fields": {
+        "user": 15,
+        "action": "Created",
+        "description": "Created user te",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 28,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 29,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 30,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 31,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 32,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 33,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 34,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 35,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 36,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 37,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 38,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 39,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 40,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 41,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 42,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 43,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 44,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 45,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 46,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 47,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 48,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 49,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 50,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 51,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 52,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 53,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 54,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 55,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 56,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 57,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 58,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 59,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 60,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 61,
+    "fields": {
+        "user": 14,
+        "action": "Updated",
+        "description": "Updated user test",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 62,
+    "fields": {
+        "user": 2,
+        "action": "Created",
+        "description": "Created product 235",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 63,
+    "fields": {
+        "user": 7,
+        "action": "Created",
+        "description": "Created provider 2",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 64,
+    "fields": {
+        "user": 4,
+        "action": "Updated",
+        "description": "order 1",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 65,
+    "fields": {
+        "user": 4,
+        "action": "Deleted",
+        "description": "order 1",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 66,
+    "fields": {
+        "user": 1,
+        "action": "Updated",
+        "description": "order 2",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 67,
+    "fields": {
+        "user": 1,
+        "action": "Deleted",
+        "description": "order 2",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 68,
+    "fields": {
+        "user": 2,
+        "action": "Updated",
+        "description": "product ручка",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.log",
+    "pk": 69,
+    "fields": {
+        "user": 2,
+        "action": "Deleted",
+        "description": "product ручка",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.provider",
+    "pk": 1,
+    "fields": {
+        "user": 2,
+        "rating": 4,
+        "product_type": "pen",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.provider",
+    "pk": 2,
+    "fields": {
+        "user": 7,
+        "rating": 5,
+        "product_type": "pencil",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.product",
+    "pk": 2,
+    "fields": {
+        "title": "ручка",
+        "provider": 1,
+        "weight": 12.0,
+        "price": 30.0,
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.product",
+    "pk": 4,
+    "fields": {
+        "title": "235",
+        "provider": 1,
+        "weight": 235.0,
+        "price": 5235.0,
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.orderstatus",
+    "pk": 1,
+    "fields": {
+        "status": "доставка",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.orderstatus",
+    "pk": 3,
+    "fields": {
+        "status": "принято в работу",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.orderstatus",
+    "pk": 4,
+    "fields": {
+        "status": "доставлено",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.orderstatus",
+    "pk": 5,
+    "fields": {
+        "status": "создан",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.orderstatus",
+    "pk": 6,
+    "fields": {
+        "status": "собирается",
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.deliverytime",
+    "pk": 1,
+    "fields": {
+        "provider": 1,
+        "product": 2,
+        "delivery_time": "2024-10-21",
+        "quantity": 13,
+        "is_deleted": false
+    }
+},
+{
+    "model": "logistic.deliverytime",
+    "pk": 3,
+    "fields": {
+        "provider": 1,
+        "product": 2,
+        "delivery_time": "2024-10-21",
+        "quantity": 12,
+        "is_deleted": false
+    }
+}
+]

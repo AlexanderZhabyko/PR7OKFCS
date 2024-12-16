@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  DeliveryTime
+{% endblock %}
+{% block body %}
+    <a class="secondary-btn" href="{% url 'add_delivery_time' %}">добавить</a>
+    <ul>
+  {% for delivery  in page_obj %}
+      <div class="ulclass">
+            <li class="liclass">{{ delivery.product.title }} от поставщика {{ delivery.provider.user.login }} - дата доставки: {{ delivery.delivery_time }} - количество: {{ delivery.quantity }} шт.</li>
+            <a class="service-btn" href="{% url 'edit_delivery_time' delivery.pk %}">Изменить</a>
+            <a href="{% url 'delete_delivery_time' delivery.pk %}" class="service-btn delbtn" onclick="return confirm('Вы уверены что хотите удалить объект' +
+             ' {{ delivery.product.title }}');">Удалить</a>
+      </div>
+    {% endfor %}
+    </ul>
+    {% include 'inc/_paginator.html' %}
+{% endblock %}

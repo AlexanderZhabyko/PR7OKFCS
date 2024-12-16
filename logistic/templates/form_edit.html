@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+  Изменение данных {{ model_name }}
+{% endblock %}
+{% block body %}
+<h1 class="center">Изменить {{ model_name }}</h1>
+<form class="myform" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input class="secondary-btn" type="submit" value="Сохранить изменения">
+</form>
+{% endblock %}
